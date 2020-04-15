@@ -79,7 +79,10 @@ dizer exatamente qual foi o problema. Podemos então usar uma Exception mais espe
 	{
 		if(quantidade > this.saldo)
 		{		
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("Saldo insuficiente ou valor invalido");
+			/* passando a mensagem de erro como argumento para o construtor da classe IllegalArgumentException()
+			 * O método getMessage() definido na classe Throwable (mãe de todos os tipos de erros e
+             exceptions) vai retornar a mensagem que passamos ao construtor da IllegalArgumentException .*/
 			
 		}
 		else

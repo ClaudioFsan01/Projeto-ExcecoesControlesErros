@@ -33,7 +33,9 @@ public class TesteErro {
 			
 		}		
 		catch(IllegalArgumentException e) {
-			System.out.println(" Saldo insuficiente , erro : "+ e.getMessage());	
+			//System.out.println(" Saldo insuficiente , erro : "+ e.getMessage());	
+			//ou podemos pegar a mensagem passada para o construtor da classe IllegalArgumentException
+			System.out.println(e.getMessage());
 		}
 		
 		
